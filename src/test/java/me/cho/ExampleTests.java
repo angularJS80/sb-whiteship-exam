@@ -1,5 +1,7 @@
 package me.cho;
 
+import me.cho.conf.JavaConfBean;
+import me.cho.conf.XmlConfBean;
 import me.cho.user.UserService;
 import org.junit.Assert;
 import org.junit.Test;
@@ -15,9 +17,20 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class ExampleTests {
 	@Autowired
     UserService userService;
+
+	@Autowired
+	JavaConfBean javaConfBean;
+
+	@Autowired
+	XmlConfBean xmlConfBean;
+
 	@Test
 	public void di() {
 		Assert.assertNotNull(userService);
+		Assert.assertNotNull(javaConfBean);
+		Assert.assertNotNull(userService.getUserRepository());
+
+
 	}
 
 }
