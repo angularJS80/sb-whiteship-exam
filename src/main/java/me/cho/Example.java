@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 //@Import(BeanConfig.class)
-@ImportResource("application.xml")
+@ImportResource("beanconfig.xml")
 public class Example {
     @RequestMapping("/")
     String home(){
-        return "Hello World!";
+        return "Hello World reload (spring-boot-devtools)";
     }
     public static  void main(String[] args){
         SpringApplication.run(Example.class,args);
