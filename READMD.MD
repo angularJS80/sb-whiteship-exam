@@ -27,4 +27,6 @@ spring boot 백기서님 유튭 강좌 보고 따라해보기
    1) application.xml  - > beanconfig.xml 로변경
    2) static resource 추가 
    3) spring-boot-devtools 디펜던씨 추가 ( 개발편의 라이브러리로 빌드만해도 실행중인 어플리케이션에 반영 등등의 기능 )  
-   
+   4) implementation version 추가 
+      - https://stackoverflow.com/questions/34519759/application-version-does-not-show-up-in-spring-boot-banner-txt/34521123
+      - 메이븐 dependencyManagement - > parent 형태로 변경 ( 실행가능한 jar 오류 원인 모름 manifaset 못찾음) 

@@ -19,6 +19,9 @@ public class Example {
         return "Hello World reload (spring-boot-devtools)";
     }
     public static  void main(String[] args){
-        SpringApplication.run(Example.class,args);
+        //SpringApplication.run(Example.class,args);
+        SpringApplication springApplication = new SpringApplication(Example.class);
+        springApplication.addListeners(new AppStartListener());
+        springApplication.run(args);
     }
 }
