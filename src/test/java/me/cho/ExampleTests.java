@@ -12,22 +12,26 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-//@SpringBootTest
+@SpringBootTest
 @ContextConfiguration(classes = Example.class) // 명시한 클레스 기준으로 테스트
 public class ExampleTests {
 	@Autowired
     UserService userService;
 
 	@Autowired
-	JavaConfBean javaConfBean;
+    JavaConfBean javaConfBean;
 
 	@Autowired
-	XmlConfBean xmlConfBean;
+    XmlConfBean xmlConfBean;
+
+
 
 	@Test
 	public void di() {
 		Assert.assertNotNull(userService);
 		Assert.assertNotNull(javaConfBean);
+		Assert.assertNotNull(xmlConfBean);
+		// 아규먼트 빈 못가져옴...
 		Assert.assertNotNull(userService.getUserRepository());
 
 

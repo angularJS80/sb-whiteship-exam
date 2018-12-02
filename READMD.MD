@@ -23,10 +23,18 @@ spring boot 백기서님 유튭 강좌 보고 따라해보기
    6) 생성자가 하나라면 @AutoWired 없이 사용 가능하다
    7) 오류가 나는데 application.xml 을 제거 했다가다시 복구 시키면 가동하는 오류 이건..모르겠음.   
    
-4. day004
+4. day004-006
    1) application.xml  - > beanconfig.xml 로변경
    2) static resource 추가 
    3) spring-boot-devtools 디펜던씨 추가 ( 개발편의 라이브러리로 빌드만해도 실행중인 어플리케이션에 반영 등등의 기능 )  
    4) implementation version 추가 
       - https://stackoverflow.com/questions/34519759/application-version-does-not-show-up-in-spring-boot-banner-txt/34521123
       - 메이븐 dependencyManagement - > parent 형태로 변경 ( 실행가능한 jar 오류 원인 모름 manifaset 못찾음) 
+   
+5. day007-008
+   1) application arguments 추가 
+   2) 페키지 외부 application.properties
+   3) @Value 어노테이션 사용
+   4) 테스트 코드를 위한 xml import 경로 형태 변경
+   5) maven dependency management - > parent 타입으로 변경
+   
