@@ -43,3 +43,9 @@ spring boot 백기서님 유튭 강좌 보고 따라해보기
    2) pojo 프로퍼티 가져오기
    3) enviroment 에 넣어 가져오기
    4) configrationproperties 로 주입시켜오기
+   
+7. day010
+   1) 써드파트 class 에 프로퍼티 담아보기
+   2) 벨리데이트 
+   3) 듀레이션   
+   4) 렐렉서 프로퍼티 카멜 케뱁 스네이크
