@@ -37,4 +37,9 @@ spring boot 백기서님 유튭 강좌 보고 따라해보기
    3) @Value 어노테이션 사용
    4) 테스트 코드를 위한 xml import 경로 형태 변경
    5) maven dependency management - > parent 타입으로 변경
-   
+
+6. day009
+   1) yml 추가 
+   2) pojo 프로퍼티 가져오기
+   3) enviroment 에 넣어 가져오기
+   4) configrationproperties 로 주입시켜오기

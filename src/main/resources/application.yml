@@ -1,0 +1,34 @@
+ymlcho:
+  name: cho
+---
+spring:
+  profiles: default
+ymlcho:
+  name: defaultcho
+  ymlPojolist:
+    - name: myname
+      description: mydescription
+    - name: myname
+      description: mydescription
+
+
+---
+spring:
+  profiles: prod
+ymlcho:
+  name: prodcho
+  ymlPojolist:
+    - name: myname
+      description: mydescription
+    - name: myname
+      description: mydescription
+---
+spring:
+  profiles: dev
+ymlcho:
+  name: devcho
+  ymlPojolist:
+    - name: myname
+      description: mydescription
+    - name: myname
+      description: mydescription
