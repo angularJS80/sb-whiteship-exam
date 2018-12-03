@@ -1,7 +1,6 @@
 package me.cho;
 
 import me.cho.conf.ChoProperties;
-import me.cho.conf.IFProfile;
 import me.cho.conf.InJarProperties;
 import me.cho.conf.YmlPojo;
 import me.cho.user.UserService;
@@ -61,8 +60,6 @@ public class Example {
 		return new InJarProperties();
 	}
 
-	@Autowired
-	IFProfile profile;
 
 	@RequestMapping("/")
 	String home(){
@@ -82,7 +79,6 @@ public class Example {
 
 		System.out.println(inJarProperties().getTime1());
 		System.out.println(inJarProperties().getTime2());
-		System.out.printf(profile.getActive());
 
 
 		return "Hello World reload (spring-boot-devtools)"+ymlname+name+argumentsStr;
