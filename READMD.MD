@@ -52,4 +52,7 @@ spring boot 백기서님 유튭 강좌 보고 따라해보기
    
 8. day011
    1) 프로파일별 프로퍼티 가져오기 
-   2) 로깅 설정
+   2) 로깅 설정(applicaton.proerties)
+   
+9. day012 
+   1) 로깅 설정(logback-spring.xml)   
